@@ -1,4 +1,4 @@
-/* tslint:disable:no-unused-variable */
+photoedit/* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
 import { UserService } from './user.service';

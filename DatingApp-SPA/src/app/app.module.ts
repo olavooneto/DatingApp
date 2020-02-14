@@ -28,6 +28,9 @@ import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { NgxGalleryModule } from "ngx-gallery";
 import { MemberEditComponent } from './members/member-list/member-edit/member-edit.component';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { PhotoeditorComponent } from './members/member-list/photoeditor/photoeditor.component';
+import { FileUploader, FileUploadModule } from 'ng2-file-upload';
+
 
 
 export function tokeGettter() {
@@ -53,10 +56,12 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MessagesComponent,
     MemberCardComponent,
     MemberDetailComponent,
-    MemberEditComponent
+    MemberEditComponent,
+    PhotoeditorComponent
   ],
   imports: [
     BrowserModule,
+    FileUploadModule,
     HttpClientModule,
     FormsModule,
     BsDropdownModule.forRoot(),
